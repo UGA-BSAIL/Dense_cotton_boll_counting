@@ -1,27 +1,18 @@
-# Guidelines_repo_organization
-## Uploading Projects:
-Most projects should be uploaded to GitHub, except for certain CAD and mechanical design projects.
-## Storing Raw Data: 
-Raw data can be stored in other locations, such as the lab server, HiperGator, or OneDrive. Be sure to specify the data storage location in the README.md file.
-## Staying Up-to-Date: 
-Keep the repository up to date, for example, when your paper is finished or when you graduate.
-## Privacy Settings: 
-Set the repository to private until your paper is published. Once published, you may make the repository public.
-
-
-
-<big>**Below is a list of suggested information to include in a README.md file.**</big>
 # Project Description
-An overview of the project, its goals, and methodologies
+This repository contains the source code and instruction for Dense cotton boll counting. Detailed methodology and results can be found from our paper.
 
 # Setup Instructions
-Guide on setting up the environment, such as installing packages using requirements.txt. In particular, specifics for Hipergator. 
+Pip install all requirements in a Python>=3.8 environment with PyTorch>=1.8. 
 
 # Usage
-Provide the location of the code and instructions for running the main scripts, including training, evaluation, and any visualization scripts. 
+1. Clone this repository.
+2. Clone the FlowFormer repository:<https://github.com/drinkingcoder/FlowFormer-Official> to the scr folder.
+3. Create a Python virtual environment and install all requiremnets.
+4. Download the trained detector or train your own data followed the RTDETR repository.
+5. Run ./scr/boll_tracking.py to get the counting results.
 
 # Data Information
-Specify where the raw data is located (e.g., in the raw_data folder or an external link). Include any important notes on data access or format requirements. 
+The video dataset can be accessed on figshare:<https://figshare.com/s/cade84dfccf6ff6a67f9>. Please refresh the page if you cannot see the datasets.
 
-# Results or Paper (Optional)
-If available, link to results, visualizations, or a research paper and add the citation format. 
+# Acknowlegement
+- [FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official)
