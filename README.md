@@ -16,3 +16,5 @@ The video dataset can be accessed on figshare:<https://figshare.com/s/cade84dfcc
 
 # Acknowlegement
 - [FlowFormer](https://github.com/drinkingcoder/FlowFormer-Official)
+- [ultralytics](https://github.com/ultralytics/ultralytics)
+- [RTDETR](https://github.com/lyuwenyu/RT-DETR)
